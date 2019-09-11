@@ -3,6 +3,13 @@
 #include <cstdlib>
 #include <ctime>
 
+#ifdef __BORLANDC__
+    // I'm not 100% convinced about this, but Embarcadero said it was fine, so ....
+    // But the Borland version of <cstdlib> defined srand() and rand()
+    // however, compiling fails unless I include this file. Sigh.
+    #include <stdlib.h>
+#endif
+
 using std::cout;
 using std::endl;
 using std::string;
