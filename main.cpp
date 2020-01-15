@@ -89,7 +89,7 @@ void genPassword(string &newPassword) {
 
 int main(int argc, char *argv[])
 {
-    cout << "-- Created using 'Oracle Password Generator'" << endl << endl;
+    //cout << "-- Created using 'Oracle Password Generator'" << endl << endl;
 
     string newPassword;
 
